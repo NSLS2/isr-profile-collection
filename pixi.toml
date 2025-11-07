@@ -1,4 +1,4 @@
-[project]
+[workspace]
 channels = ["conda-forge"]
 name = "isr-profile-collection"
 platforms = ["linux-64"]
