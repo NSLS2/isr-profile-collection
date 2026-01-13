@@ -774,6 +774,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/fastapi-cli-0.0.16-pyhcf101f3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/fastapi-core-0.122.0-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-8.0.0-gpl_hbbdf940_906.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/fisx-1.3.2-py312hf79963d_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/flexcache-0.3-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/flexparser-0.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
@@ -1103,6 +1104,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pyepics-3.5.8-py312h7900ff3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pyerfa-2.0.1.5-py310h32771cd_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/pymca-5.9.5-py312h4f23490_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pymongo-4.15.4-py312h1289d80_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyolog-4.5.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.2.5-pyhcf101f3_0.conda
@@ -3261,6 +3263,22 @@ packages:
   purls: []
   size: 12445427
   timestamp: 1758924965297
+- conda: https://conda.anaconda.org/conda-forge/linux-64/fisx-1.3.2-py312hf79963d_2.conda
+  sha256: d56fd657fc358dac6209753c48cf6044041bcc065f32f3a4465888f6c967f764
+  md5: 266c137577a249d3739e424f5622957c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libstdcxx >=14
+  - numpy >=1.23,<3
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  license: MIT
+  license_family: MIT
+  purls:
+  - pkg:pypi/fisx?source=hash-mapping
+  size: 4030670
+  timestamp: 1756710459975
 - conda: https://conda.anaconda.org/conda-forge/noarch/flexcache-0.3-pyhd8ed1ab_1.conda
   sha256: acdb7b73d84268773fcc8192965994554411edc488ec3447925a62154e9d3baa
   md5: f1e618f2f783427019071b14a111b30d
@@ -7987,6 +8005,24 @@ packages:
   - pkg:pypi/pygments?source=hash-mapping
   size: 889287
   timestamp: 1750615908735
+- conda: https://conda.anaconda.org/conda-forge/linux-64/pymca-5.9.5-py312h4f23490_0.conda
+  sha256: c00176e047946a9fd70116f6a4f2c069ca484ae399aa88b5d12e9f5e7e705c20
+  md5: 73b2e24ede270c90797eadb65ad052dd
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - fisx >=1.1.6
+  - h5py
+  - libgcc >=14
+  - matplotlib-base >1.0
+  - numpy >=1.23,<3
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  license: MIT
+  license_family: MIT
+  purls:
+  - pkg:pypi/pymca5?source=hash-mapping
+  size: 8574733
+  timestamp: 1766573753928
 - conda: https://conda.anaconda.org/conda-forge/linux-64/pymongo-4.15.4-py312h1289d80_0.conda
   sha256: b2c6fc8a427f6bf33862f1a16b26f0d15b6cd8cb100cf514b8f4c7963b7fc321
   md5: e28a28f1f4c0506d808e97f683a81921

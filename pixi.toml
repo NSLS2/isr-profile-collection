@@ -49,11 +49,13 @@ qs-server = "uvicorn --host localhost --port 60610 bluesky_httpserver.server:app
 ipython = ">=9.5.0"
 pyside6 = "*"
 numpy = ">2"
+pymca = ">=5.9.5,<6"
 
 
 [feature.terminal.tasks]
 start = "unset SESSION_MANAGER PYTHONPATH && MPLBACKEND=qtagg ipython --profile-dir=."
 pvs = "ipython --profile-dir=. -c 'get_pv_types(); exit()'"
+pymca = "pymca"
 
 [environments]
 terminal = {features=["profile", "terminal"], solve-group="profile"}
